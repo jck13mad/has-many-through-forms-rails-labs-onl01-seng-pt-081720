@@ -9,5 +9,5 @@
   <strong><%= f.label :categoties %></strong><br />
   
   Choose a category:<br />
-  <%= f.collection_check_boxes :category_ids
+  <%= f.collection_check_boxes :category_ids, Category.all 
 <% end %>
