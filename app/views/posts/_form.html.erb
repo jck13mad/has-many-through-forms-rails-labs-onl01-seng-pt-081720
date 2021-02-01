@@ -11,5 +11,5 @@
   Choose a category:<br />
   <%= f.collection_check_boxes :category_ids, Category.all, :id, :name %><br />
   Or create a new category:<br />
-  <%= f.field_for :categories, @post.categories.build
+  <%= f.field_for :categories, @post.categories.build do |
 <% end %>
